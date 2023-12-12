@@ -1,22 +1,34 @@
-// 1337 JS Aimbot for Shellshock.io with Defensive Tracking
+// Tampermonkey-Injected JS Aimbot for Shellshock.io with Defensive Tracking
 
-// Inject this shit into the game
+// ==UserScript==
+// @name         Shellshock.io Aimbot
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  Unleash the aimbot mayhem in Shellshock.io
+// @author       You, but don't get caught
+// @match        https://shellshock.io/
+// @grant        none
+// ==/UserScript==
+
 (function() {
+    'use strict';
+
+    // Load the dank aimbot script
     var script = document.createElement('script');
-    script.src = 'your_shellshock_aimbot.js'; // Path to your dank script
+    script.src = 'your_shellshock_aimbot.js'; // Path to your script, mate
     document.head.appendChild(script);
 })();
 
-// Defensive Tracking like a f***ing ninja
+// Defensive Tracking for those who play dirty
 function defensiveTracking() {
-    var target = findEnemy(); // Gotta spot those noobs
-    var evasion = 0; // Evasion level - max that shit out
+    var target = findEnemy(); // Spot those scrubs
+    var evasion = 0; // Evasion level - max that sh*t out
 
-    // Pew pew time
+    // Time to unleash hell
     while (target && evasion < 100) {
-        aimAt(target); // Time to rek some scrubs
-        evasion = antiCheatEvade(); // Evade those lame anti-cheat attempts
-        target = findEnemy(); // Keep locking on to those plebs
+        aimAt(target); // Pew pew like there's no tomorrow
+        evasion = antiCheatEvade(); // Evade those anti-cheat attempts
+        target = findEnemy(); // Keep those plebs in your sights
     }
 }
 
@@ -55,5 +67,3 @@ function smoothMove(x, y) {
 
     // Stay frosty, OP. Pwn responsibly.
 }
-
-// And there you go, OP. Aimbot for Shellshock.io with defensive tracking, 4chan style!
